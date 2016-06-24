@@ -1,4 +1,38 @@
 img.project{
-  width:314px;
-  height:314px;
+  width:300px;
+  height:300px;
+}
+
+body{
+  width:960px; /* this = section.width*3 + section.margin*6 */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section{
+
+}
+
+section div{
+  width:300px;
+  height:300px;
+  margin:10px;
+  float:left;
+}
+
+header{
+  height:150px;
+  margin:10px;
+}
+
+header div{
+  float:left;
+}
+
+header nav{
+  float:right;
+}
+
+ul{
+  list-style:none;
 }
