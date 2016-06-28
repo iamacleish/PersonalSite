@@ -1,13 +1,3 @@
-img.project{
-  width:300px;
-  height:300px;
-  -webkit-transition: .2s ease-in-out;
-	transition: .2s ease-in-out;
-}
-img.project:hover{
-  opacity: .5;
-}
-
 
 body{
   width:960px; /* this = section.width*3 + section.margin*6 */
@@ -68,13 +58,40 @@ h2{
   -webkit-font-smoothing: antialiased;;
   color:#bebebe;
 }
-section{
-
-}
 
 section div{
   width:300px;
   height:300px;
   margin:10px;
   float:left;
+}
+
+.personalProject img{
+  width:300px;
+  height:300px;
+  -webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+
+.personalProject img:hover{
+  opacity: .5;
+}
+.personalProject a{
+
+}
+
+@media screen and (max-width: 980px) {
+    body {
+      width:98%;
+    }
+    section div{
+      width:31.25%;
+      height:auto;
+      margin:1%;
+    }
+    .personalProject img{
+      width:100%;
+      height:auto;
+    }
+
 }
