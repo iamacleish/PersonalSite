@@ -77,7 +77,6 @@ section div{
   opacity: .5;
 }
 .personalProject a{
-
 }
 
 @media screen and (max-width: 980px) {
@@ -91,7 +90,13 @@ section div{
     }
     .personalProject img{
       width:100%;
-      height:auto;
+      height:100%;
+      -webkit-transition: none;
+    	transition: none;
     }
+    .personalProject img:hover{
+      opacity: 1;
+    }
+
 
 }
