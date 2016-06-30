@@ -48,6 +48,10 @@ h1{
   -webkit-font-smoothing: antialiased;
   color:#585858;
 }
+h1 a{
+  text-decoration: none;
+  color:#585858;
+}
 h2{
   font-size: 16px;
   style-type:none;
@@ -59,11 +63,30 @@ h2{
   color:#bebebe;
 }
 
-section div{
+section div {
   width:300px;
   height:300px;
   margin:10px;
   float:left;
+}
+
+.standardLayout section{
+  width:80%;
+  text-align: center;
+
+}
+.standardLayout div{
+  width:100%;
+  float: none;
+}
+
+.standardLayout p{
+  color: #585858;
+  line-height: 1.5;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust:none;
 }
 
 .personalProject h3{
@@ -108,6 +131,17 @@ section div{
     body {
       width:98%;
     }
+
+    .standardLayout section{
+      text-align: center;
+    }
+    .standardLayout div{
+      margin-left: auto;
+      margin-right: auto;
+      width:80%;
+    }
+
+
     section div{
       width:31.333333%;
       height:auto;
@@ -121,7 +155,7 @@ section div{
     	transition: none;
     }
     .personalProject:hover img{
-      opacity: .5;
+      opacity: .6;
     }
     .personalProject h3{
       padding-left: 2px;
@@ -132,6 +166,7 @@ section div{
       text-overflow: ellipsis;
     }
 }
+
 @media screen and (max-width: 780px){
   body {
     width:98%;
@@ -147,6 +182,7 @@ section div{
     display: block;
   }
 }
+
 @media screen and (max-width: 520px) {
     body {
       width:100%;
