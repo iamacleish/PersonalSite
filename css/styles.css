@@ -17,7 +17,7 @@ header div{
 
 header nav{
   float:right;
-  padding-top: 75px;
+  padding-top: 58px;
 }
 
 ul{
@@ -66,6 +66,25 @@ section div{
   float:left;
 }
 
+.personalProject h3{
+  margin:0;
+  position:absolute;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  color:#585858;
+  padding-left: 34px;
+  padding-top: 30px;
+  display: none;
+}
+
+.personalProject:hover h3{
+  display: block;
+  opacity: 1;
+  z-index: 1;
+}
+
 .personalProject img{
   width:300px;
   height:300px;
@@ -73,9 +92,10 @@ section div{
 	transition: .2s ease-in-out;
 }
 
-.personalProject img:hover{
-  opacity: .5;
+.personalProject:hover img{
+  opacity: .3;
 }
+
 .personalProject a{
 }
 
@@ -84,19 +104,49 @@ section div{
       width:98%;
     }
     section div{
-      width:31.25%;
+      width:31.333333%;
       height:auto;
       margin:1%;
     }
     .personalProject img{
       width:100%;
       height:100%;
+      display: block;
       -webkit-transition: none;
     	transition: none;
     }
     .personalProject img:hover{
       opacity: 1;
     }
+}
+@media screen and (max-width: 680px){
+  body {
+    width:98%;
+  }
+  section div{
+    width:48%;
+    height:auto;
+    margin:1%;
+  }
+}
+@media screen and (max-width: 480px) {
+    body {
+      width:100%;
+    }
+    section div{
+      width:96%;
+      height:auto;
+      margin:2%;
 
-
+    }
+    .personalProject img{
+      width:100%;
+      height:100%;
+      display: block;
+      -webkit-transition: none;
+    	transition: none;
+    }
+    .personalProject img:hover{
+      opacity: 1;
+    }
 }
