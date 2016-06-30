@@ -80,6 +80,7 @@ section div{
 }
 
 .personalProject:hover h3{
+
   display: block;
   opacity: 1;
   z-index: 1;
@@ -97,9 +98,13 @@ section div{
 }
 
 .personalProject a{
+    text-decoration: none;
 }
 
 @media screen and (max-width: 980px) {
+    header{
+      height:100px;
+    }
     body {
       width:98%;
     }
@@ -115,11 +120,19 @@ section div{
       -webkit-transition: none;
     	transition: none;
     }
-    .personalProject img:hover{
-      opacity: 1;
+    .personalProject:hover img{
+      opacity: .5;
+    }
+    .personalProject h3{
+      padding-left: 2px;
+      position: relative;
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 }
-@media screen and (max-width: 680px){
+@media screen and (max-width: 780px){
   body {
     width:98%;
   }
@@ -128,8 +141,13 @@ section div{
     height:auto;
     margin:1%;
   }
+  .personalProject h3{
+    padding-left: 2px;
+    position: relative;
+    display: block;
+  }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 520px) {
     body {
       width:100%;
     }
