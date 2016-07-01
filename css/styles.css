@@ -125,9 +125,10 @@ section div {
 }
 
 @media screen and (max-width: 980px) {
-    header{
+    header.indexHeader{
       height:100px;
     }
+
     body {
       width:98%;
     }
