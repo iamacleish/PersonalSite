@@ -117,7 +117,7 @@ section div {
 }
 
 .personalProject:hover img{
-  opacity: .3;
+  opacity: .2;
 }
 
 .personalProject a{
@@ -156,7 +156,7 @@ section div {
     	transition: none;
     }
     .personalProject:hover img{
-      opacity: .6;
+      opacity: .7;
     }
     .personalProject h3{
       padding-left: 2px;
@@ -201,7 +201,7 @@ section div {
       -webkit-transition: none;
     	transition: none;
     }
-    .personalProject img:hover{
-      opacity: 1;
+    .personalProject:hover img{
+      opacity: .7;
     }
 }
