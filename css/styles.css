@@ -66,7 +66,9 @@ h2{
   -webkit-font-smoothing: antialiased;;
   color:#bebebe;
 }
-
+nav button{
+  display:none;
+}
 section div {
   width:300px;
   height:300px;
@@ -211,9 +213,16 @@ section div {
 
 @media screen and (max-width: 420px) {
   header div{
-    width:100%;
+    width:auto;
   }
-  header nav{
-    padding-top: 20px;
+  nav ul{
+    /*--padding-top: 20px;*/
+    display:none;
+  }
+  nav button{
+    padding:0;
+    border:0;
+    background:none;
+    display:inline-block;
   }
 }
