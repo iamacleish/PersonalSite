@@ -1,0 +1,25 @@
+{
+  "name": "ian-macleish",
+  "version": "1.0.0",
+  "description": "Portfolio site.",
+  "main": "js/index.js",
+  "scripts": {
+    "test": "test",
+    "build-css": "node-sass --include-path scss scss/styles.scss public/css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamacleish/PersonalSite.git"
+  },
+  "author": "ian-macleish",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamacleish/PersonalSite/issues"
+  },
+  "homepage": "https://github.com/iamacleish/PersonalSite#readme",
+  "devDependencies": {
+    "node-sass": "^3.8.0",
+    "nodemon": "^1.9.2"
+  }
+}

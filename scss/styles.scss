@@ -1,0 +1,12 @@
+$color-primary-grey: #585858;
+$font-primary-family: Helvetica, Arial, sans-serif;
+body{
+    font-color: $color-primary-grey;
+    font-family: $font-primary-family;
+}
+p{
+  line-height: 1.5;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust:none;
+}

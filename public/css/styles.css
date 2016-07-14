@@ -1,0 +1,9 @@
+body {
+  font-color: #585858;
+  font-family: Helvetica, Arial, sans-serif; }
+
+p {
+  line-height: 1.5;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none; }

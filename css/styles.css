@@ -66,6 +66,13 @@ h2{
   -webkit-font-smoothing: antialiased;;
   color:#bebebe;
 }
+h3{
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  color:#585858;
+}
 nav button{
   display:none;
 }
