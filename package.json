@@ -5,7 +5,7 @@
   "main": "js/index.js",
   "scripts": {
     "test": "test",
-    "build-css": "node-sass --include-path scss scss/styles.scss public/css/styles.css",
+    "build-css": "node-sass --include-path scss public/scss/styles.scss public/css/styles.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/iamacleish/PersonalSite#readme",
   "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
     "node-sass": "^3.8.0",
     "nodemon": "^1.9.2"
   }
