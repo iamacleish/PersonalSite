@@ -21,6 +21,8 @@
   "devDependencies": {
     "browser-sync": "^2.13.0",
     "gulp": "^3.9.1",
+    "gulp-file-include": "^0.13.7",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
     "node-sass": "^3.8.0",
     "nodemon": "^1.9.2"
