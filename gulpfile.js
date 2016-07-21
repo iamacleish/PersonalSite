@@ -7,20 +7,21 @@ var reload      = browserSync.reload;
 
 var src = {
     //Scss and css.
-    scss:           'private/scss/*.scss',
-    css:            'public/css',
+    scss:                 'private/scss/*.scss',
+    css:                  'public/css',
 
-    HTMLpartial:    'private/partials/*.html',
+    HTMLpartial:          'private/partials/*.html',
+    portfolioHTMLpartial: 'private/partials/projects/*.html',
 
     //The main index. Target of serve.
-    indexHTMLsrc:   'private/index.html',
-    indexHTMLdest:  './public',
+    indexHTMLsrc:         'private/index.html',
+    indexHTMLdest:        './public',
 
     //this is the html template and destination.
-    HTMLsrc:        'private/html/**/*.html',
-    HTMLdest :      './public/html',
+    HTMLsrc:              'private/html/**/*.html',
+    HTMLdest :            './public/html',
 
-    indexHTML:      'public/index.html' //actual target of gulp
+    indexHTML:            'public/index.html' //actual target of gulp
 };
 
 // Static Server + watching scss/html files
@@ -34,6 +35,7 @@ gulp.task('serve', ['sass','fileinclude'], function() {
     gulp.watch(src.HTMLpartial, ['fileinclude']);
     gulp.watch(src.indexHTMLsrc, ['fileinclude']);
     gulp.watch(src.HTMLsrc, ['fileinclude']);
+    gulp.watch(src.portfolioHTMLpartial, ['fileinclude']);
     gulp.watch(src.indexHTML).on('change', reload);
 });
 
@@ -46,6 +48,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('fileinclude', function() {
+
   //build index
   gulp.src(src.indexHTMLsrc)
     .pipe(fileinclude({
