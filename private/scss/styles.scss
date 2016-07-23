@@ -1,4 +1,5 @@
 $color-primary-grey: #585858;
+$color-secondary-grey: #bebebe;
 $font-primary-family: Helvetica, Arial, sans-serif;
 a{
   text-decoration: none;
@@ -18,7 +19,7 @@ h2{
   margin:0px;
   font-size: 0.75rem;
   font-weight:normal;
-  color:#bebebe;
+  color: $color-secondary-grey;
 }
 h3{
     font-size: 16px;
@@ -29,7 +30,6 @@ p{
   font-size: 16px;
   -webkit-text-size-adjust:none;
 }
-
 body{
   color: $color-primary-grey;
   font-family: $font-primary-family;
@@ -40,6 +40,12 @@ body{
   margin-right: auto;
   margin-top: 8px;
   margin-bottom: 8px;
+  @media screen and (max-width: 980px) {
+    width:98%;
+  }
+  @media screen and (max-width: 520px) {
+    width:100%;
+  }
 }
 header{
   height: 150px;
@@ -47,6 +53,7 @@ header{
   div{
     float:left;
     padding-top: 50px;
+
   }
   nav{
     float:right;
@@ -55,11 +62,26 @@ header{
       list-style-type:none;
       padding: 0;
       margin: 0;
+      @media screen and (max-width: 420px) {
+        display: none;
+      }
       li{
         float:left;
         padding-left: 10px;
       }
     }
+    button{
+      display: none;
+      @media screen and (max-width: 420px) {
+        padding:0;
+        border:0;
+        background:none;
+        display:inline-block;
+      }
+    }
+  }
+  @media screen and (max-width: 980px) {
+    height:100px;
   }
 }
 .projectGridSection{
@@ -68,10 +90,29 @@ header{
     height:300px;
     margin:10px;
     float:left;
-
+    @media screen and (max-width: 980px) {
+      width:31.333333%;
+      height:auto;
+      margin:1%;
+    }
+    @media screen and (max-width: 780px){
+      width:48%;
+    }
+    @media screen and (max-width: 520px) {
+      width:96%;
+      margin:2%;
+    }
   }
 }
-a{
+.personalProject{
+    @media screen and (min-width: 980px) {
+    background: -moz-linear-gradient(rgba(255,255,255,1), rgba(0,0,0,0.65)); /* FF3.6+ */
+    background: -webkit-linear-gradient(rgba(255,255,255,1),rgba(0,0,0,0.65)); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(rgba(255,255,255,1),rgba(0,0,0,0.65)); /* Opera 11.10+ */
+    background: -ms-linear-gradient(rgba(255,255,255,1),rgba(0,0,0,0.65)); /* IE10+ */
+    background: linear-gradient(rgba(255,255,255,1),rgba(0,0,0,0.65)); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+  }
   h3{
     margin: 0;
     position: absolute;
@@ -79,15 +120,44 @@ a{
     text-decoration: none;
     padding-left: 34px;
     padding-top: 30px;
-    display: none;
+    display:none;
+    z-index: 4;
+    @media screen and (max-width: 980px) {
+      padding-left: 2px;
+      position: relative;
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
   }
   img{
     width:300px;
     height:300px;
     -webkit-transition: .2s ease-in-out;
     transition: .2s ease-in-out;
+    @media screen and (max-width: 980px) {
+      background: none;
+      width:100%;
+      height:100%;
+      display: block;
+      -webkit-transition: none;
+    	transition: none;
+      opacity: 1;
+    }
+
   }
-}
-.standardLayout{
-  margin: 10px;
+  :hover{
+    h3{
+      display: block;
+      opacity: 1;
+      z-index: 1;
+    }
+    img{
+      opacity: .2;
+      @media screen and (max-width: 980px) {
+        opacity: .7;
+      }
+    }
+  }
 }

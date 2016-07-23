@@ -37,6 +37,12 @@ body {
   margin-right: auto;
   margin-top: 8px;
   margin-bottom: 8px; }
+  @media screen and (max-width: 980px) {
+    body {
+      width: 98%; } }
+  @media screen and (max-width: 520px) {
+    body {
+      width: 100%; } }
 
 header {
   height: 150px;
@@ -51,30 +57,97 @@ header {
       list-style-type: none;
       padding: 0;
       margin: 0; }
+      @media screen and (max-width: 420px) {
+        header nav ul {
+          display: none; } }
       header nav ul li {
         float: left;
         padding-left: 10px; }
+    header nav button {
+      display: none; }
+      @media screen and (max-width: 420px) {
+        header nav button {
+          padding: 0;
+          border: 0;
+          background: none;
+          display: inline-block; } }
+  @media screen and (max-width: 980px) {
+    header {
+      height: 100px; } }
 
 .projectGridSection div {
   width: 300px;
   height: 300px;
   margin: 10px;
   float: left; }
+  @media screen and (max-width: 980px) {
+    .projectGridSection div {
+      width: 31.333333%;
+      height: auto;
+      margin: 1%; } }
+  @media screen and (max-width: 780px) {
+    .projectGridSection div {
+      width: 48%; } }
+  @media screen and (max-width: 520px) {
+    .projectGridSection div {
+      width: 96%;
+      margin: 2%; } }
 
-a h3 {
+@media screen and (min-width: 980px) {
+  .personalProject {
+    background: -moz-linear-gradient(white, rgba(0, 0, 0, 0.65));
+    /* FF3.6+ */
+    background: -webkit-linear-gradient(white, rgba(0, 0, 0, 0.65));
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(white, rgba(0, 0, 0, 0.65));
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(white, rgba(0, 0, 0, 0.65));
+    /* IE10+ */
+    background: linear-gradient(white, rgba(0, 0, 0, 0.65));
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+    /* IE6-9 */ } }
+
+.personalProject h3 {
   margin: 0;
   position: absolute;
   font-size: 16px;
   text-decoration: none;
   padding-left: 34px;
   padding-top: 30px;
-  display: none; }
+  display: none;
+  z-index: 4; }
+  @media screen and (max-width: 980px) {
+    .personalProject h3 {
+      padding-left: 2px;
+      position: relative;
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; } }
 
-a img {
+.personalProject img {
   width: 300px;
   height: 300px;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out; }
+  @media screen and (max-width: 980px) {
+    .personalProject img {
+      background: none;
+      width: 100%;
+      height: 100%;
+      display: block;
+      -webkit-transition: none;
+      transition: none;
+      opacity: 1; } }
 
-.standardLayout {
-  margin: 10px; }
+.personalProject :hover h3 {
+  display: block;
+  opacity: 1;
+  z-index: 1; }
+
+.personalProject :hover img {
+  opacity: .2; }
+  @media screen and (max-width: 980px) {
+    .personalProject :hover img {
+      opacity: .7; } }
