@@ -50,27 +50,38 @@ header {
   header div {
     float: left;
     padding-top: 50px; }
+    @media screen and (max-width: 420px) {
+      header div {
+        width: 100%; } }
   header nav {
     float: right;
     padding-top: 58px; }
+    @media screen and (max-width: 420px) {
+      header nav {
+        float: left;
+        padding-top: 30px;
+        width: 100%; } }
     header nav ul {
       list-style-type: none;
       padding: 0;
       margin: 0; }
-      @media screen and (max-width: 420px) {
-        header nav ul {
-          display: none; } }
       header nav ul li {
         float: left;
         padding-left: 10px; }
+        @media screen and (max-width: 420px) {
+          header nav ul li {
+            padding-left: 0;
+            padding-right: 10px; } }
     header nav button {
-      display: none; }
+      display: none;
+      /*
       @media screen and (max-width: 420px) {
-        header nav button {
-          padding: 0;
-          border: 0;
-          background: none;
-          display: inline-block; } }
+        padding:0;
+        border:0;
+        background:none;
+        display:inline-block;
+      }
+      */ }
   @media screen and (max-width: 980px) {
     header {
       height: 100px; } }
@@ -151,3 +162,15 @@ header {
   @media screen and (max-width: 980px) {
     .personalProject :hover img {
       opacity: .7; } }
+
+.standardLayout {
+  margin: 10px; }
+  .standardLayout h1 {
+    padding-top: 58px; }
+    @media screen and (min-width: 980px) {
+      .standardLayout h1 {
+        padding-top: 8px; } }
+  .standardLayout a {
+    color: #0025cc; }
+  .standardLayout a:visited {
+    color: #0025cc; }

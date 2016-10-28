@@ -11,7 +11,7 @@ var src = {
     css:                  'public/css',
 
     HTMLpartial:          'private/partials/*.html',
-    portfolioHTMLpartial: 'private/partials/projects/*.html',
+    portfolioHTMLpartial: 'private/partials/**/*.html',
 
     //The main index. Target of serve.
     indexHTMLsrc:         'private/index.html',

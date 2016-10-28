@@ -1,6 +1,8 @@
 $color-primary-grey: #585858;
 $color-secondary-grey: #bebebe;
+$link-primary-blue: #0025cc;
 $font-primary-family: Helvetica, Arial, sans-serif;
+
 a{
   text-decoration: none;
   color: inherit;
@@ -53,31 +55,47 @@ header{
   div{
     float:left;
     padding-top: 50px;
+    @media screen and (max-width: 420px) {
+      width:100%;
+    }
 
   }
   nav{
     float:right;
     padding-top: 58px;
+    @media screen and (max-width: 420px) {
+      float:left;
+      padding-top:30px;
+      width: 100%;
+    }
+
     ul{
       list-style-type:none;
       padding: 0;
       margin: 0;
-      @media screen and (max-width: 420px) {
-        display: none;
-      }
+      //@media screen and (max-width: 420px) {
+      //  display: none;
+      //}
+
       li{
         float:left;
         padding-left: 10px;
+        @media screen and (max-width: 420px) {
+          padding-left: 0;
+          padding-right: 10px;
+        }
       }
     }
     button{
       display: none;
+      /*
       @media screen and (max-width: 420px) {
         padding:0;
         border:0;
         background:none;
         display:inline-block;
       }
+      */
     }
   }
   @media screen and (max-width: 980px) {
@@ -159,5 +177,20 @@ header{
         opacity: .7;
       }
     }
+  }
+}
+.standardLayout{
+  margin:10px;
+  h1{
+    padding-top: 58px;
+    @media screen and (min-width: 980px) {
+      padding-top:8px;
+    }
+  }
+  a{
+    color: $link-primary-blue;
+  }
+  a:visited{
+    color: $link-primary-blue;
   }
 }
